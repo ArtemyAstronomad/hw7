@@ -90,10 +90,9 @@ public class HW7 {
     }
     private static void task8 (){
 
-        for (int flyBy = 0; flyBy % 79 == 0; flyBy += 79){
-            while (flyBy > 1824 && flyBy < 2124){
+        for (int flyBy = 0; flyBy <= 2124 ; flyBy++){
+            if (flyBy >= 1824 && flyBy % 79 == 0){
                 System.out.println(flyBy);
-                flyBy += 79;
             }
         }
 
